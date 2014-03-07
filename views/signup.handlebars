@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Mar 07 2014 11:47:54 GMT+0000 (UTC) -->
+<html data-wf-site="531902edb0a7679c100000ca">
+<head>
+  <meta charset="utf-8">
+  <title>TaskApplication - signup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../public/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/taskapplication.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Lato:100,300,400,700,900"]
+      }
+    });
+  </script>
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+</head>
+<body>
+  <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+    <div class="w-container actionbar">
+      <a class="w-inline-block homebutton" href="index.html"></a>
+    </div>
+  </div>
+  <h1 class="sign-up sign-up-title">Sign Up</h1>
+  <div class="w-form">
+    <form class="w-clearfix sign-up-form" name="email-form" data-name="Email Form">
+      <h3 class="sign-up-headings">Profile Information</h3>
+      <input class="w-input form_inputs" type="text" placeholder="name" name="name" data-name="Name" required="required"></input>
+      <input class="w-input form_inputs" type="email" placeholder="email" name="email" data-name="Email" required="required"></input>
+      <input class="w-input form_inputs" type="text" placeholder="password" name="password" required="required" data-name="password"></input>
+      <input class="w-input form_inputs" type="text" placeholder="verify your password" name="field" required="required"></input>
+      <h3>Group Information</h3>
+      <p class="sign-up-paragraph">This is what you will share among your coworkers, roommates or friends to assign tasks.</p>
+      <input class="w-input form_inputs" type="email" placeholder="group name (ex. Thugs Mansion)" name="groupname" data-name="GroupName" required="required"></input>
+      <input class="w-input form_inputs" type="text" placeholder="group password" name="field" required="required"></input>
+      <input class="w-button signupbutton" type="submit" value="Sign Up" data-wait="Please wait..."></input>
+    </form>
+    <div class="w-form-done">
+      <p>Thank you! Your submission has been received!</p>
+    </div>
+    <div class="w-form-fail">
+      <p>Oops! Something went wrong while submitting the form :(</p>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="../public/js/webflow.js"></script>
+</body>
+</html>

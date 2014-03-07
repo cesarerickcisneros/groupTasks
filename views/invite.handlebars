@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Mar 07 2014 11:47:54 GMT+0000 (UTC) -->
+<html data-wf-site="531902edb0a7679c100000ca">
+<head>
+  <meta charset="utf-8">
+  <title>TaskApplication - invite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../public/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/taskapplication.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Lato:100,300,400,700,900"]
+      }
+    });
+  </script>
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="http://freefavicons.org/download/check-mark/?favicon=check-mark&type=ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+</head>
+<body>
+  <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+    <div class="w-container actionbar">
+      <a class="w-inline-block homebutton" href="dashboard.html"></a>
+      <a class="w-inline-block homebutton action-buttons add" href="addtask.html">
+        <div class="linktext">Add Task</div>
+      </a>
+      <a class="w-inline-block homebutton action-buttons" href="invite.html">
+        <div class="linktext">Invite</div>
+      </a>
+      <a class="w-inline-block homebutton action-buttons settings" href="settings.html">
+        <div class="linktext">Settings</div>
+      </a>
+    </div>
+  </div>
+  <div class="addtaskform">
+    <div class="w-form">
+      <form class="w-clearfix addform" name="email-form" data-name="Email Form">
+        <h3>Invite</h3>
+        <p class="adddescription">You can invite anyone you have to complete tasks with (roommates, friends, coworkers, etc.). We will email them a link to the app with your group name and password so they can join.</p>
+        <input class="w-input form_inputs" type="text" placeholder="name "
+        name="name" data-name="Name" required="required"></input>
+        <input class="w-input form_inputs" type="text" placeholder="email" name="email" data-name="email" required="required"></input>
+        <input class="w-button signupbutton" type="submit" value="Send Invite" data-wait="Please wait..."></input>
+      </form>
+      <div class="w-form-done">
+        <p>Thank you! Your submission has been received!</p>
+      </div>
+      <div class="w-form-fail">
+        <p>Oops! Something went wrong while submitting the form :(</p>
+      </div>
+    </div>
+  </div>
+  <div class="w-clearfix logout">
+    <a class="w-clearfix w-inline-block logoutbutton" href="#">
+      <img class="logoutimage" src="../public/images/icon_32559.png" width="35" height="35" alt="531969c6e54411de120004f8_icon_32559.png">
+      <p class="logout logouttext">Logout</p>
+    </a>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="../public/js/webflow.js"></script>
+</body>
+</html>
