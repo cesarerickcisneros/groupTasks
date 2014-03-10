@@ -8,7 +8,7 @@ exports.view = function(req, res) {
 		res.render('./index');
 	}*/
       //  var rmv = false;
-        data.Group[req.session.groupID].viewAddLink = false;
+        data.Group[req.session.groupID] = false;
         res.render('dashboard', data.Group[req.session.groupID]);
     
 }

@@ -9,12 +9,14 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var login = require('./routes/login');
 var dashboard = require('./routes/dashboard');
-var add = require('./routes/add');
+var addtask = require('./routes/addtask');
 var about = require('./routes/about');
 var signup = require('./routes/signup');
 var forgotpassword = require('./routes/forgotpassword');
-var invitefriends = require('./routes/invitefriends');
+var invite = require('./routes/invite');
+var settings = require('./routes/settings');
 
 var app = express();
 
@@ -40,20 +42,22 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/login', dashboard.login);
+app.get('/login.handlebars', login.view);
+//app.get('/login', dashboard.login);
 app.get('/index.handlebars', index.logout);
 app.get('/dashboard.handlebars', dashboard.view);
 app.get('/forgotpassword.handlebars', forgotpassword.view);
 //app.get('/forgotpassword', forgotpassword.forgotpass);
-app.get('/add.handlebars', add.view);
+//app.get('/add.handlebars', add.view);
 app.get('/about.handlebars', about.view);
 app.get('/signup.handlebars', signup.view);
-app.get('/invitefriends.handlebars', invitefriends.view);
+app.get('/invite.handlebars', invite.view);
 app.get('/signup', signup.signup);
-app.get('/add', dashboard.addTask);
+app.get('/addtask.handlebars', addtask.view);
 app.get('/remove', dashboard.removeTask);
-app.get('/invitefriends', invitefriends.mail);
+app.get('/invite', invite.mail);
 app.get('/forgotpass', forgotpassword.forgotpass);
+app.get('/settings.handlebars', settings.view);
 app.get('/viewAddLink', dashboard.viewAddLink);
 
 

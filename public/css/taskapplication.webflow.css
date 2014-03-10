@@ -267,14 +267,12 @@ p {
     margin-right: 7px;
     float: right;
     background-image: url('../images/icon_15546.png');
-    background-position: 50% 1px;
     background-size: 28px 34px;
     font-family: Lato, sans-serif;
     color: white;
   }
   .homebutton.action-buttons.add {
     background-image: url('../images/icon_21211.png');
-    background-position: 54% 4px;
     background-size: 25px;
   }
   .homebutton.action-buttons.settings {
@@ -546,9 +544,17 @@ p {
     margin-bottom: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 15px;
+    padding-left: 20px;
     font-family: Lato, sans-serif;
     color: black;
     font-size: 26px;
     font-weight: 300;
+  }
+.date {
+    margin-top: -12px;
+    padding-top: 0px;
+    padding-left: 40px;
+    font-family: Lato, sans-serif;
+    color: black;
+    font-size: 10px;
   }
