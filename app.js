@@ -43,22 +43,21 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/login.handlebars', login.view);
-//app.get('/login', dashboard.login);
+app.get('/login', dashboard.login);
 app.get('/index.handlebars', index.logout);
 app.get('/dashboard.handlebars', dashboard.view);
 app.get('/forgotpassword.handlebars', forgotpassword.view);
-//app.get('/forgotpassword', forgotpassword.forgotpass);
-//app.get('/add.handlebars', add.view);
+app.get('/changePassword', settings.changePassword);
+app.get('/settings.handlebars', settings.view);
 app.get('/about.handlebars', about.view);
 app.get('/signup.handlebars', signup.view);
 app.get('/invite.handlebars', invite.view);
 app.get('/signup', signup.signup);
 app.get('/addtask.handlebars', addtask.view);
+app.get('/add', dashboard.addTask);
 app.get('/remove', dashboard.removeTask);
 app.get('/invite', invite.mail);
-app.get('/forgotpass', forgotpassword.forgotpass);
-app.get('/settings.handlebars', settings.view);
-app.get('/viewAddLink', dashboard.viewAddLink);
+
 
 
 http.createServer(app).listen(app.get('port'), function(){

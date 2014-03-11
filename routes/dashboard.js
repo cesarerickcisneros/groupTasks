@@ -3,23 +3,12 @@ var data = require('../data.json');
 var fs = require('fs');
 
 exports.view = function(req, res) { 
-    /*
-	if(!req.session.userID || req.session.userID == -1){
-		res.render('./index');
-	}*/
-      //  var rmv = false;
-        data.Group[req.session.groupID] = false;
-        res.render('dashboard', data.Group[req.session.groupID]);
-    
-}
 
-exports.viewAddLink = function(req, res) { 
-    /*
 	if(!req.session.userID || req.session.userID == -1){
-		res.render('./index');
-	}*/
+		res.render('login.handlebars');
+	}
       //  var rmv = false;
-        data.Group[req.session.groupID].viewAddLink = true;
+      //  data.Group[req.session.groupID] = false;
         res.render('dashboard', data.Group[req.session.groupID]);
     
 }
@@ -59,7 +48,7 @@ exports.login = function(req,res){
 
     if(!found){
     console.log("Username or password not valid, please check and try again");
-	res.render('index');
+	res.render('login.handlebars');
     }
 }
 
@@ -67,6 +56,8 @@ exports.addTask = function(req, res) {
     
 	var newTask = req.query.taskname;
 	var userinfo = req.query.id;
+    var due = req.query.due;
+	var newpriority = req.query.priority;
     var found = false;
     var name = "";
     var usernum = userinfo[0];
@@ -88,6 +79,8 @@ exports.addTask = function(req, res) {
                     "Date": "", //Grab today's date and insert into DB
                     "taskid": data.Group[i].Members[j].Tasks.length,
                     "taskname": newTask,
+                    "due": due,
+                    "priority": newpriority,
                     "ownerid": usernum
                 }
                 

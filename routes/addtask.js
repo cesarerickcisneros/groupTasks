@@ -5,9 +5,10 @@ var data = require('../data.json');
 
 exports.view = function(req, res){
     
-    req.session.userID;
+    if(!req.session.userID || req.session.roommateID == -1){
+		res.render('login.handlebars');
+	}
     
-   // console.log(req.session.userID);
 	res.render('addtask', data.Group[req.session.groupID]);
 }
 

@@ -35,54 +35,24 @@
       </a>
     </div>
   </div>
+    {{#each Members}}
   <div>
     <div class="individualtasks">
-      <h4 class="names">Cesar</h4>
+      <h4 class="names">{{name}}</h4>
         <!--<form action="">-->
-        <div class="taskitems high-priority">
+        {{#each Tasks}}
+        <div class="taskitems {{priority}}">
             <h2 class="tasktitles"><input name="checkbox_name" id="checkbox_id" type="checkbox" checked>
-Feed cat</h2>
-            <div class="date">Due: ASAP</div>
+                {{taskname}}</h2>
+            <div class="date">Due: {{due}}</div>
       </div>
+        {{/each}}
         <!--</form>-->
-      <div class="taskitems high-priority">
-        <h2 class="tasktitles"><input name="checkbox_name" id="checkbox_id" type="checkbox" checked>
-Feed cat</h2>
-          <div class="date">Due: ASAP</div>
-      </div>
-      <div class="taskitems mediumpriority">
-        <h2 class="tasktitles"><input name="checkbox_name" id="checkbox_id" type="checkbox" checked>Throw out trash</h2>
-          <div class="date">Due: ASAP</div>
-      </div>
-      <div class="taskitems lowprioority">
-        <h2 class="tasktitles"><input name="checkbox_name" id="checkbox_id" type="checkbox" checked>Wash dishes</h2>
-          <div class="date">Due: ASAP</div>
-      </div>
+
       <div class="taskdiv"></div>
     </div>
   </div>
-  <div>
-    <div class="individualtasks">
-      <h4 class="names">Jaysen</h4>
-      <div class="taskitems high-priority">
-        <h2 class="tasktitles">Pay rent</h2>
-      </div>
-      <div class="taskitems high-priority">
-        <h2 class="tasktitles">Pay bills</h2>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="individualtasks">
-      <h4 class="names">Sarah</h4>
-      <div class="taskitems high-priority">
-        <h2 class="tasktitles">Buy Milk</h2>
-      </div>
-      <div class="taskitems lowprioority">
-        <h2 class="tasktitles">Clean windows</h2>
-      </div>
-    </div>
-  </div>
+    {{/each}}
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="/js/webflow.js"></script>

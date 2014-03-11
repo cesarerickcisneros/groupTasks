@@ -2,7 +2,10 @@ var nodemailer = require("nodemailer");
 var data = require('../data.json');
 
 exports.view = function(req, res){
-    //console.log('Rendering invitefriends');
+    if(!req.session.userID || req.session.roommateID == -1){
+		res.render('login.handlebars');
+	}
+    
 	res.render('invite');
 };
 
@@ -27,11 +30,11 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 var mailOptions = {
     
     
-    from: "TaskIt <taskitapplication@gmail.com>", // sender address
+    from: "Checkmates <checkmatesapp@gmail.com>", // sender address
     to: email1, // list of receivers
-    subject: "Hello", // Subject line
+    subject: "Invitation from " + data.Group[req.session.groupID].Members[req.session.userID].name + " to Join Checkmates Today!", // Subject line
     text: "Join our App", // plaintext body
-    html: "<b>Hello " + name1 +", your friend has just sent you an invitation to join our app at taskitapplication.herokuapp.com.</b>" // html body
+    html: "<b>Hey " + name1 +", <br> " + data.Group[req.session.groupID].Members[req.session.userID].name + " has just sent you an invitation to join their group on Checkmates. Checkmates is an app to easily share tasks amoung a group of people. <br><br> Group Name: " + data.Group[req.session.groupID].groupname + "<br> Group Password: " + data.Group[req.session.groupID].grouppassword + "<br><br>Use this group information to make an account at checkmates.herokuapp.com.</b>" // html body
 
 }
 

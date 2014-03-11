@@ -56,8 +56,10 @@ exports.signup = function(req,res){
                 newUser.id = atEndOfMembers;
                 if(uadded){
                     console.log("Added new user with following details: " + data.Group[0].Members);
-                    console.log(data.Group[0].Members);
-                    res.render('index.handlebars');
+                    req.session.groupID = i;
+                    req.session.userID = newUser.id;
+                    console.log(req.session.groupID);
+res.render('dashboard', data.Group[req.session.groupID]);
                   }
             }
             else if(!uadded){ //New Group name created
@@ -66,7 +68,7 @@ exports.signup = function(req,res){
                 data.Group.push(newGroup);
                 if(gadded){
                    // console.log("Added new group with following details: " + data.Group[2].groupname);
-                    res.render('index.handlebars');
+                    res.render('dashboard', data.Group[req.session.groupID]);
                 }
             }
             else{

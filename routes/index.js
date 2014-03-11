@@ -9,6 +9,5 @@ exports.view = function(req, res) {
 
 exports.logout = function(req,res){
 	req.session.userID = -1;
-	console.log(req.session.studentID);
 	res.render('index');
 }

@@ -16,14 +16,18 @@
                                     "style": "",
                                     "taskname": "Pay bills",
                                     "ownerid": 0,
-                                    "ownername": "Cesar"
+                                    "ownername": "Cesar",
+                                    "due": "ASAP",
+                                    "priority": "high-priority"
                                 },
                                 {
                                     "date": "January 16, 2014",
                                     "taskid": 1,
                                     "taskname": "Replace bathroom lightbulbs",
                                     "ownerid": 0,
-                                    "ownername": "Cesar"
+                                    "ownername": "Cesar",
+                                    "due": "ASAP",
+                                    "priority": "high-priority"
                                 }
                             ]
                     },
@@ -38,14 +42,18 @@
                                     "taskid": 0,
                                     "taskname": "Clean the garage",
                                     "ownerid": 1,
-                                    "ownername": "Jaysen"
+                                    "ownername": "Jaysen",
+                                    "due": "ASAP",
+                                    "priority": "medium-priority"
                                 },
                                 {
                                     "date": "January 23, 2014",
                                     "taskid": 1,
                                     "taskname": "Feed the fish",
                                     "ownerid": 1,
-                                    "ownername": "Jaysen"
+                                    "ownername": "Jaysen",
+                                    "due": "ASAP",
+                                    "priority": "low-priority"
                                 }
                             ]
                     },
@@ -60,14 +68,18 @@
                                     "taskid": 0,
                                     "taskname": "Clean living room",
                                     "ownerid": 2,
-                                    "ownername": "Sarah"
+                                    "ownername": "Sarah",
+                                    "due": "ASAP",
+                                    "priority": "low-priority"
                                 },
                                 {
                                     "date": "January 30, 2014",
                                     "taskid": 1,
                                     "taskname": "Take out the trash",
                                     "ownerid": 2,
-                                    "ownername": "Sarah"
+                                    "ownername": "Sarah",
+                                    "due": "ASAP",
+                                    "priority": "medium-priority"
                                 }
                             ]
                     }
@@ -88,14 +100,18 @@
                                     "taskid": 0,
                                     "taskname": "Mow the lawn",
                                     "ownerid": 0,
-                                    "ownername": "Steven"
+                                    "ownername": "Steven",
+                                    "due": "ASAP",
+                                    "priority": "high-priority"
                                 },
                                 {
                                     "date": "January 26, 2014",
                                     "taskid": 1,
                                     "taskname": "Replace the smoke detectors",
                                     "ownerid": 0,
-                                    "ownername": "Steven"
+                                    "ownername": "Steven",
+                                    "due": "ASAP",
+                                    "priority": "high-priority"
                                 }
                             ]
                     },
@@ -110,14 +126,18 @@
                                     "taskid": 0,
                                     "taskname": "Clean the kitchen",
                                     "ownerid": 1,
-                                    "ownername": "Terrance"
+                                    "ownername": "Terrance",
+                                    "due": "ASAP",
+                                    "priority": "high-priority"
                                 },
                                 {
                                     "date": "January 10, 2014",
                                     "taskid": 1,
                                     "taskname": "Feed the cat",
                                     "ownerid": 1,
-                                    "ownername": "Terrance"
+                                    "ownername": "Terrance",
+                                    "due": "ASAP",
+                                    "priority": "medium-priority"
                                 }
                             ]
                     },
@@ -132,14 +152,18 @@
                                     "taskid": 0,
                                     "taskname": "Rake the leaves",
                                     "ownerid": 2,
-                                    "ownername": "Vanessa"
+                                    "ownername": "Vanessa",
+                                    "due": "ASAP",
+                                    "priority": "low-priority"
                                 },
                                 {
                                     "date": "January 11, 2014",
                                     "taskid": 1,
                                     "taskname": "Clean the toilets",
                                     "ownerid": 2,
-                                    "ownername": "Vanessa"
+                                    "ownername": "Vanessa",
+                                    "due": "ASAP",
+                                    "priority": "medium-priority"
                                 }
                             ]
                     }

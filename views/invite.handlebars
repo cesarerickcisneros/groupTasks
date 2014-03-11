@@ -37,13 +37,12 @@
   </div>
   <div class="addtaskform">
     <div class="w-form">
-      <form class="w-clearfix addform" name="email-form" data-name="Email Form">
+      <form class="w-clearfix addform" name="email-form" data-name="Email Form" role="form" action="invite" method="get">
         <h3>Invite</h3>
         <p class="adddescription">You can invite anyone you have to complete tasks with (roommates, friends, coworkers, etc.). We will email them a link to the app with your group name and password so they can join.</p>
-        <input class="w-input form_inputs" type="text" placeholder="name "
-        name="name" data-name="Name" required="required"></input>
-        <input class="w-input form_inputs" type="text" placeholder="email" name="email" data-name="email" required="required"></input>
-        <input class="w-button signupbutton" type="submit" value="Send Invite" data-wait="Please wait..."></input>
+        <input class="w-input form_inputs" type="text" placeholder="friend's name" name="friend1name" data-name="friend1name" required="required"></input>
+        <input class="w-input form_inputs" type="email" placeholder="friend&apos;s email" name="friend1email" data-name="friend1mail" required="required"></input>
+        <button class="w-button signupbutton" type="submit" value="invite" data-wait="Please wait...">Send invitation</button>
       </form>
       <div class="w-form-done">
         <p>Thank you! Your submission has been received!</p>

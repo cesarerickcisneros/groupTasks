@@ -37,22 +37,30 @@
   </div>
   <div class="addtaskform">
     <div class="w-form">
-      <form class="w-clearfix addform" name="email-form" data-name="Email Form">
+      <form class="w-clearfix addform" name="email-form" role="form" method="get" action="add">
         <h3>Add Task</h3>
         <p class="adddescription">You can add task and assign them here. Set up the date and its level of priority and you are all set!</p>
-        <input class="w-input form_inputs" type="text" placeholder="name of task" name="name" data-name="Name" required="required"></input>
-        <select class="w-select form_inputs" name="dropdown">
-          <option value="">assign person...</option>
-          <option value="First">First Choice</option>
-          <option value="Second">Second Choice</option>
-          <option value="Third">Third Choice</option>
-        </select>
-        <select class="w-select form_inputs" name="dropdown">
+        <input class="w-input form_inputs" type="text" placeholder="enter task" name="taskname" data-name="taskname" required="required"></input>
+        <select class="w-select form_inputs" name="id" data-name="id" required="required">
+        <option value="">assign task...</option>
+          {{#each Members}}
+        <option name={{name}} value="{{id}} {{name}}">{{name}}</option>
+          {{/each}}
+      </select>
+        
+        <select class="w-select form_inputs" name="due" data-name="due" required="required">
           <option value="">due by...</option>
           <option value="asap">asap</option>
-          <option value="Second">end of day</option>
-          <option value="Third">end of week</option>
-        </select><a class="button signupbutton" href="#">Add Task</a>
+          <option value="end of day">end of day</option>
+          <option value="end of week">end of week</option>
+        </select>
+        <select class="w-select form_inputs" name="priority" data-name="priority" required="required">
+          <option value="">priority...</option>
+          <option value="low-priority">low</option>
+          <option value="medium-priority">medium</option>
+          <option value="high-priority">high</option>
+        </select>
+        <button class="button signupbutton" type="submit" value="Add">Add Task</button>
       </form>
       <div class="w-form-done">
         <p>Thank you! Your submission has been received!</p>

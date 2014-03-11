@@ -318,8 +318,10 @@ p {
     margin-top: 12px;
     float: left;
   }
+button { border:0;}
   .footer {
     display: block;
+    clear:both;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -419,7 +421,7 @@ p {
     border-bottom: 1px none #76edbd;
     font-size: 20px;
   }
-  .task.lowpriority {
+  .task.low-priority {
     padding-top: 8px;
     padding-bottom: 8px;
     border-right: 5px solid #45d2d2;
@@ -530,11 +532,11 @@ p {
     padding-left: 0px;
     border-right: 7px solid #ff7f7f;
   }
-  .taskitems.mediumpriority {
+  .taskitems.medium-priority {
     width: auto;
     border-right: 7px solid #ffa154;
   }
-  .taskitems.lowprioority {
+  .taskitems.low-priority {
     width: auto;
     border-right-style: solid;
     border-right-color: #45d2d2;
@@ -542,7 +544,7 @@ p {
   .tasktitles {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 5px;
+    padding-top: 5px;va
     padding-bottom: 5px;
     padding-left: 20px;
     font-family: Lato, sans-serif;
