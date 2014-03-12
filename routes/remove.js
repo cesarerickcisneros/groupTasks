@@ -5,9 +5,9 @@ var data = require('../data.json');
 
 exports.view = function(req, res){
     
-    if(!req.session.userID || req.session.roommateID == -1){
+   /* if(!req.session.userID || req.session.roommateID == -1){
 		res.render('login.handlebars');
-	}
+	}*/
     
 	res.render('remove', data);
 }
