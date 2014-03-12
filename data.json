@@ -18,16 +18,18 @@
                                     "ownerid": 0,
                                     "ownername": "Cesar",
                                     "due": "ASAP",
-                                    "priority": "high-priority"
+                                    "priority": "high-priority",
+                                    "description": "trashbags under counter"
                                 },
                                 {
                                     "date": "January 16, 2014",
                                     "taskid": 1,
-                                    "taskname": "Replace bathroom lightbulbs",
+                                    "taskname": "Replace lightbulbs",
                                     "ownerid": 0,
                                     "ownername": "Cesar",
                                     "due": "ASAP",
-                                    "priority": "high-priority"
+                                    "priority": "high-priority",
+                                    "description": "trashbags under counter"
                                 }
                             ]
                     },
@@ -44,7 +46,8 @@
                                     "ownerid": 1,
                                     "ownername": "Jaysen",
                                     "due": "ASAP",
-                                    "priority": "medium-priority"
+                                    "priority": "medium-priority",
+                                    "description": "trashbags under counter"
                                 },
                                 {
                                     "date": "January 23, 2014",
@@ -53,7 +56,8 @@
                                     "ownerid": 1,
                                     "ownername": "Jaysen",
                                     "due": "ASAP",
-                                    "priority": "low-priority"
+                                    "priority": "low-priority",
+                                    "description": "trashbags under counter"
                                 }
                             ]
                     },
@@ -70,7 +74,8 @@
                                     "ownerid": 2,
                                     "ownername": "Sarah",
                                     "due": "ASAP",
-                                    "priority": "low-priority"
+                                    "priority": "low-priority",
+                                    "description": "trashbags under counter"
                                 },
                                 {
                                     "date": "January 30, 2014",
@@ -79,7 +84,8 @@
                                     "ownerid": 2,
                                     "ownername": "Sarah",
                                     "due": "ASAP",
-                                    "priority": "medium-priority"
+                                    "priority": "medium-priority",
+                                    "description": "trashbags under counter"
                                 }
                             ]
                     }
@@ -102,7 +108,8 @@
                                     "ownerid": 0,
                                     "ownername": "Steven",
                                     "due": "ASAP",
-                                    "priority": "high-priority"
+                                    "priority": "high-priority",
+                                    "description": "trashbags under counter"
                                 },
                                 {
                                     "date": "January 26, 2014",
@@ -111,7 +118,8 @@
                                     "ownerid": 0,
                                     "ownername": "Steven",
                                     "due": "ASAP",
-                                    "priority": "high-priority"
+                                    "priority": "high-priority",
+                                    "description": "trashbags under counter"
                                 }
                             ]
                     },
@@ -128,7 +136,8 @@
                                     "ownerid": 1,
                                     "ownername": "Terrance",
                                     "due": "ASAP",
-                                    "priority": "high-priority"
+                                    "priority": "high-priority",
+                                    "description": "trashbags under counter"
                                 },
                                 {
                                     "date": "January 10, 2014",
@@ -137,7 +146,8 @@
                                     "ownerid": 1,
                                     "ownername": "Terrance",
                                     "due": "ASAP",
-                                    "priority": "medium-priority"
+                                    "priority": "medium-priority",
+                                    "description": "trashbags under counter"
                                 }
                             ]
                     },
@@ -154,7 +164,8 @@
                                     "ownerid": 2,
                                     "ownername": "Vanessa",
                                     "due": "ASAP",
-                                    "priority": "low-priority"
+                                    "priority": "low-priority",
+                                    "description": "trashbags under counter"
                                 },
                                 {
                                     "date": "January 11, 2014",
@@ -163,7 +174,8 @@
                                     "ownerid": 2,
                                     "ownername": "Vanessa",
                                     "due": "ASAP",
-                                    "priority": "medium-priority"
+                                    "priority": "medium-priority",
+                                    "description": "trashbags under counter"
                                 }
                             ]
                     }

@@ -12,6 +12,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+    $('.tasktitles').click(addTaskDetails);
     $('.invite').click(analytics);
     
 }
@@ -19,4 +20,15 @@ function initializePage() {
 function analytics(e){
      
    ga("send","event","invite","click");    
+}
+
+function addTaskDetails(e) {
+    e.preventDefault();
+    var name = $(this).closest('.individualtasks').attr('id');
+    console.log(name);
+    var task = $(this).closest('.tasktitles').attr('id');
+    console.log(task);
+    
+    console.log($(this).closest('.taskitems'));
+  
 }

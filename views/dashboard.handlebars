@@ -37,14 +37,17 @@
   </div>
     {{#each Members}}
   <div>
-    <div class="individualtasks">
-      <h4 class="names">{{name}}</h4>
+    <div class="individualtasks" id ="{{name}}">
+      <h4 class="names" >{{name}}</h4>
         <!--<form action="">-->
         {{#each Tasks}}
         <div class="taskitems {{priority}}">
-            <h2 class="tasktitles"><input name="checkbox_name" id="checkbox_id" type="checkbox" checked>
+            <a href="#">
+            <h2 class="tasktitles" id ="{{taskname}}"><input name="checkbox_name" id="checkbox_id" type="checkbox" checked>
                 {{taskname}}</h2>
             <div class="date">Due: {{due}}</div>
+            </a>
+				<div class="details"></div>
       </div>
         {{/each}}
         <!--</form>-->
@@ -56,5 +59,6 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="/js/webflow.js"></script>
+    <script type="text/javascript" src="/js/dashboard.js"></script>
 </body>
 </html>
