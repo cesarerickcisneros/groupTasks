@@ -12,6 +12,16 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+    
+    $('input:checkbox').on('change', function () {
+        var input = $(this).next('h2');
+        if (this.checked) {
+            $(input).css('textDecoration', 'line-through');
+        } else {
+            $(input).css('textDecoration', 'none');
+        }
+    });
+
     $('.tasktitles').click(addTaskDetails);
     $('.invite').click(analytics);
     
