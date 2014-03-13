@@ -42,9 +42,9 @@
         <!--<form action="">-->
         {{#each Tasks}}
         <div class="taskitems {{priority}}" style="display:{{visibility}}">
-            
+            <form name="check" role="form" method="get" action="check">
             <input name="{{taskid}}"  type="checkbox" style="margin: 20px 20px 0 20px; float:left; " {{check}}></input><h2 class="tasktitles" id="{{taskname}}" style="style:float">
-                {{taskname}}</h2>
+                {{taskname}}</h2></form>
             
 				<div class="details"><div class="description">Description: {{description}}</div><div class="date">Due: {{due}}</div>
                     

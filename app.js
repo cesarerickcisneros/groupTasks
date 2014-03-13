@@ -56,6 +56,7 @@ app.get('/signup', signup.signup);
 app.get('/addtask.handlebars', addtask.view);
 app.get('/add', dashboard.addTask);
 app.get('/removeTask', dashboard.removeTask);
+app.get('/check', dashboard.check);
 app.get('/invite', invite.mail);
 
 

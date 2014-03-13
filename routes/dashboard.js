@@ -141,3 +141,41 @@ exports.removeTask = function(req, res) {
     //console.log("Something went terribly wrong");
 }
 
+exports.check = function(req, res) {
+
+   // console.log("removeTask");
+   // rmv = true;
+  //  var name = req.query.taskname;
+    var ownernum = req.query.ownerid;
+	var tasknum = req.query.taskid;
+    //var oname = req.query.ownername;
+    var hide = false;//thought, variable to hide remove button should be set once removeTask function is called
+    
+    console.log("ownerid: " + ownernum + " taskid: " + tasknum);
+    
+    var found = false;
+    
+    for(var i = 0; i < data.Group.length; i ++){
+        for(var k = 0; k < data.Group[i].Members.length; k++){
+            for(var j = 0; j < data.Group[i].Members[k].Tasks.length; j++){
+                console.log("Before: " + data.Group[i].Members[k].Tasks[j].taskname);
+                if(data.Group[i].Members[k].Tasks[j].taskid == tasknum && 
+                   data.Group[i].Members[k].Tasks[j].ownerid == ownernum ){
+                        found = true;
+                        hide = true;
+                       console.log("Removing task");
+        
+                      //  delete data.Group[i].Members[k].Tasks[j].taskname;
+                        //console.log("After: " + data.Group[i].Members[k].Tasks[j].taskname);
+                        data.Group[i].Members[k].Tasks[j].visibility = "none";
+                        res.render('dashboard', data.Group[req.session.groupID]);
+                    
+                }//end if
+            } //end j        
+        }//end k
+    }//end i
+    
+    //console.log("Something went terribly wrong");
+}
+
+

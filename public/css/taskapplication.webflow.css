@@ -528,9 +528,7 @@ button { border:0;}
     background-color: whitesmoke;
     color: transparent;
   }
-    .taskitems:active{
-    background-color: #eaeaea;
-    }
+
   .taskitems.high-priority {
     width: auto;
     padding-top: 0px;
