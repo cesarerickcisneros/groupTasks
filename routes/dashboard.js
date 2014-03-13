@@ -83,6 +83,7 @@ exports.addTask = function(req, res) {
                     "due": due,
                     "description": description,
                     "priority": newpriority,
+                    "check": "",
                     "ownerid": usernum
                 }
                 

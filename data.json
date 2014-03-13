@@ -19,7 +19,8 @@
                                     "ownername": "Cesar",
                                     "due": "end of week",
                                     "priority": "high-priority",
-                                    "description": "$20 for cable"
+                                    "description": "$20 for cable",
+                                    "check":"checked"
                                 },
                                 {
                                     "date": "January 16, 2014",

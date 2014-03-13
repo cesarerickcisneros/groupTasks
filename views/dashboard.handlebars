@@ -43,7 +43,7 @@
         {{#each Tasks}}
         <div class="taskitems {{priority}}">
             <a href="#">
-            <input name="checkbox_name" id="checkbox_id{{taskid}}" type="checkbox" style="margin: 20px 20px 0 20px; float:left " ></input><h2 class="tasktitles" id="{{taskname}}" style="style:float">
+            <input name="checkbox_name" id="checkbox_id{{taskid}}" type="checkbox" style="margin: 20px 20px 0 20px; float:left " {{check}}></input><h2 class="tasktitles" id="{{taskname}}" style="style:float">
                 {{taskname}}</h2>
             
             </a>
