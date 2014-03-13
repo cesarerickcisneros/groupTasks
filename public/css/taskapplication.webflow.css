@@ -528,7 +528,7 @@ button { border:0;}
     background-color: whitesmoke;
     color: transparent;
   }
-    .taskitems:active{
+    .taskitems:hover{
     background-color: #eaeaea;
     }
   .taskitems.high-priority {
