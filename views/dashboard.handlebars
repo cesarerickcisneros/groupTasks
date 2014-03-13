@@ -43,7 +43,16 @@
         {{#each Tasks}}
         <div class="taskitems {{priority}}" style="display:{{visibility}}">
             
-            <input name="{{taskid}}"  type="checkbox" style="margin: 20px 20px 0 20px; float:left; " {{check}}></input><h2 class="tasktitles" id="{{taskname}}" style="style:float">
+           <!-- <input name="{{taskid}}"  type="checkbox" style="margin: 20px 20px 0 20px; float:left; " {{check}}></input>-->
+        
+        <form name="taskform" role="form" method="get" action="check">
+                  <input style="display:none" class="w-input forminputs" type="text" placeholder={{taskname}} name="taskid" data-name="{{taskname}}" value={{taskid}} id={{taskid}}></input>
+         <input style="display:none"  class="w-input forminputs" type="text" placeholder={{ownerid}} name="ownerid" data-name="{{ownerid}}" value={{ownerid}} id="{{ownerid}}"></input>
+        
+                  <button class="check" type="submit" value="Login" data-wait="Please wait..."></button>
+     </form>
+        
+        <h2 class="tasktitles" id="{{taskname}}" style="style:float; text-decoration: {{line}};">
                 {{taskname}}</h2>
             
 				<div class="details"><div class="description">Description: {{description}}</div><div class="date">Due: {{due}}</div>

@@ -65,9 +65,9 @@ exports.addTask = function(req, res) {
     console.log("adding task");
     
     for(var k = 2; k < userinfo.length; k++){
-        console.log(userinfo[k]);
+        //console.log(userinfo[k]);
         name = name + userinfo[k];
-        console.log(name);
+       // console.log(name);
     }
     console.log("Chore = " + newTask + " Roomie = " + name + " num = " + usernum);
     
@@ -85,11 +85,12 @@ exports.addTask = function(req, res) {
                     "priority": newpriority,
                     "check": "",
                     "ownerid": usernum,
-                     "visibility": ""
+                     "visibility": "",
+                    "line":""
                 }
                 
                 data.Group[i].Members[j].Tasks.push(task);
-                console.log(data.Group[i].Members[j].Tasks);
+                //console.log(data.Group[i].Members[j].Tasks);
                 if(found){
                 res.render('dashboard', data.Group[req.session.groupID]);
                 }
@@ -114,14 +115,14 @@ exports.removeTask = function(req, res) {
     //var oname = req.query.ownername;
     var hide = false;//thought, variable to hide remove button should be set once removeTask function is called
     
-    console.log("ownerid: " + ownernum + " taskid: " + tasknum);
+    //console.log("ownerid: " + ownernum + " taskid: " + tasknum);
     
     var found = false;
     
     for(var i = 0; i < data.Group.length; i ++){
         for(var k = 0; k < data.Group[i].Members.length; k++){
             for(var j = 0; j < data.Group[i].Members[k].Tasks.length; j++){
-                console.log("Before: " + data.Group[i].Members[k].Tasks[j].taskname);
+                //console.log("Before: " + data.Group[i].Members[k].Tasks[j].taskname);
                 if(data.Group[i].Members[k].Tasks[j].taskid == tasknum && 
                    data.Group[i].Members[k].Tasks[j].ownerid == ownernum ){
                         found = true;
@@ -151,24 +152,31 @@ exports.check = function(req, res) {
     //var oname = req.query.ownername;
     var hide = false;//thought, variable to hide remove button should be set once removeTask function is called
     
-    console.log("ownerid: " + ownernum + " taskid: " + tasknum);
+    //console.log("ownerid: " + ownernum + " taskid: " + tasknum);
     
     var found = false;
     
     for(var i = 0; i < data.Group.length; i ++){
         for(var k = 0; k < data.Group[i].Members.length; k++){
             for(var j = 0; j < data.Group[i].Members[k].Tasks.length; j++){
-                console.log("Before: " + data.Group[i].Members[k].Tasks[j].taskname);
+                //console.log("Before: " + data.Group[i].Members[k].Tasks[j].taskname);
                 if(data.Group[i].Members[k].Tasks[j].taskid == tasknum && 
                    data.Group[i].Members[k].Tasks[j].ownerid == ownernum ){
                         found = true;
                         hide = true;
-                       console.log("Removing task");
+                      // console.log("Removing task");
         
                       //  delete data.Group[i].Members[k].Tasks[j].taskname;
                         //console.log("After: " + data.Group[i].Members[k].Tasks[j].taskname);
-                        data.Group[i].Members[k].Tasks[j].visibility = "none";
+                        //data.Group[i].Members[k].Tasks[j].visibility = "none";
+                        if (data.Group[i].Members[k].Tasks[j].line == ""){
+                        data.Group[i].Members[k].Tasks[j].line = "line-through";
+                        }
+                        else{
+                        data.Group[i].Members[k].Tasks[j].line = "";
+                        }
                         res.render('dashboard', data.Group[req.session.groupID]);
+                        
                     
                 }//end if
             } //end j        

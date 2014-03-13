@@ -528,7 +528,13 @@ button { border:0;}
     background-color: whitesmoke;
     color: transparent;
   }
-
+.check{
+    border:1px solid black;
+    height: 17px;
+    width: 17px;
+    margin: 15px 20px 0 20px; 
+    float:left; 
+}
   .taskitems.high-priority {
     width: auto;
     padding-top: 0px;
