@@ -1,4 +1,5 @@
 'use strict';
+//var data = require('../../data.json');
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -12,23 +13,31 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+    var name = $(this).closest('.individualtasks').attr('id');
+    var id = $(this).closest('.individualtasks').attr('name');
+    var task = $(this).closest('.tasktitles').attr('id');
+    var taskid = $(this).closest('.tasktitles').attr('taskid');
     
+    /*
     $('input:checkbox').on('change', function () {
         var input = $(this).next('h2');
         if (this.checked) {
             $(input).css('textDecoration', 'line-through');
+            data.Group[req.session.groupID].Members[id].Tasks[taskid].check = checked;
+            console.log(data.Group[req.session.groupID].Members[id].Tasks[taskid]);
         } else {
             $(input).css('textDecoration', 'none');
         }
-    });
-    
-    $(document).ready(function(){
-  $(".tasktitles").click(function(){
-    $(".details").toggle();
+    });*/
+   $(".details").hide(); 
+  $(".tasktitles").click(function(){      
+      var cur = $(this).next('.details');
+     console.log(cur); $(this).next('.details').toggle();
   });
-});
 
-    $('.tasktitles').click(addTaskDetails);
+    
+    
+
     $('.invite').click(analytics);
     
 }
@@ -38,13 +47,3 @@ function analytics(e){
    ga("send","event","invite","click");    
 }
 
-function addTaskDetails(e) {
-    e.preventDefault();
-    var name = $(this).closest('.individualtasks').attr('id');
-    console.log(name);
-    var task = $(this).closest('.tasktitles').attr('id');
-    console.log(task);
-    
-    console.log($(this).closest('.taskitems'));
-  
-}

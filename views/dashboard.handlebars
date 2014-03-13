@@ -37,16 +37,15 @@
   </div>
     {{#each Members}}
   <div>
-    <div class="individualtasks" id ="{{name}}">
+    <div class="individualtasks" id ="{{name}}" name="{{id}}">
       <h4 class="names" >{{name}}</h4>
         <!--<form action="">-->
         {{#each Tasks}}
         <div class="taskitems {{priority}}">
-            <a href="#">
-            <input name="checkbox_name" id="checkbox_id{{taskid}}" type="checkbox" style="margin: 20px 20px 0 20px; float:left " {{check}}></input><h2 class="tasktitles" id="{{taskname}}" style="style:float">
+            
+            <input name="{{taskid}}"  type="checkbox" style="margin: 20px 20px 0 20px; float:left " {{check}}></input><h2 class="tasktitles" id="{{taskname}}" style="style:float">
                 {{taskname}}</h2>
             
-            </a>
 				<div class="details"><div class="description">Description: {{description}}</div><div class="date">Due: {{due}}</div></div>
       </div>
         {{/each}}
