@@ -18,7 +18,7 @@ function initializePage() {
     var task = $(this).closest('.tasktitles').attr('id');
     var taskid = $(this).closest('.tasktitles').attr('taskid');
     
-    /*
+    
     $('input:checkbox').on('change', function () {
         var input = $(this).next('h2');
         if (this.checked) {
@@ -28,7 +28,8 @@ function initializePage() {
         } else {
             $(input).css('textDecoration', 'none');
         }
-    });*/
+    });
+    
    $(".details").hide(); 
   $(".tasktitles").click(function(){      
       var cur = $(this).next('.details');

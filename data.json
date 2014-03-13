@@ -20,7 +20,8 @@
                                     "due": "end of week",
                                     "priority": "high-priority",
                                     "description": "$20 for cable",
-                                    "check":"checked"
+                                    "check":"checked",
+                                    "visibility": ""
                                 },
                                 {
                                     "date": "January 16, 2014",
@@ -30,7 +31,8 @@
                                     "ownername": "Cesar",
                                     "due": "end of day",
                                     "priority": "high-priority",
-                                    "description": "lighbulbs under sink"
+                                    "description": "lighbulbs under sink",
+                                    "visibility": ""
                                 }
                             ]
                     },
@@ -43,12 +45,13 @@
                                 {
                                     "date": "January 16, 2014",
                                     "taskid": 0,
-                                    "taskname": "Clean the garage",
+                                    "taskname": "Take out garbage",
                                     "ownerid": 1,
                                     "ownername": "Jaysen",
                                     "due": "end of week",
                                     "priority": "low-priority",
-                                    "description": "organize things for yard sale"
+                                    "description": "organize things for yard sale",
+                                    "visibility": ""
                                 },
                                 {
                                     "date": "January 23, 2014",
@@ -58,7 +61,8 @@
                                     "ownername": "Jaysen",
                                     "due": "ASAP",
                                     "priority": "high-priority",
-                                    "description": "only one pellet per meal"
+                                    "description": "only one pellet per meal",
+                                    "visibility": ""
                                 }
                             ]
                     },
@@ -76,17 +80,19 @@
                                     "ownername": "Sarah",
                                     "due": "ASAP",
                                     "priority": "high-priority",
-                                    "description": "i'm bringing a girl over! plz help!"
+                                    "description": "i'm bringing a girl over! plz help!",
+                                    "visibility": ""
                                 },
                                 {
                                     "date": "January 30, 2014",
                                     "taskid": 1,
-                                    "taskname": "Take out the trash",
+                                    "taskname": "Feed the cat",
                                     "ownerid": 2,
                                     "ownername": "Sarah",
                                     "due": "end of day",
                                     "priority": "medium-priority",
-                                    "description": "trashbags under counter"
+                                    "description": "don't feed too much, it's getting fat",
+                                    "visibility": ""
                                 }
                             ]
                     }
@@ -110,7 +116,8 @@
                                     "ownername": "Steven",
                                     "due": "end of week",
                                     "priority": "low-priority",
-                                    "description": "neighbors have been complaining"
+                                    "description": "neighbors have been complaining",
+                                    "visibility": ""
                                 },
                                 {
                                     "date": "January 26, 2014",
@@ -120,7 +127,8 @@
                                     "ownername": "Steven",
                                     "due": "ASAP",
                                     "priority": "high-priority",
-                                    "description": "kinda important"
+                                    "description": "kinda important",
+                                    "visibility": ""
                                 }
                             ]
                     },
@@ -138,7 +146,8 @@
                                     "ownername": "Terrance",
                                     "due": "ASAP",
                                     "priority": "high-priority",
-                                    "description": "don't forget to change the sponge"
+                                    "description": "don't forget to change the sponge",
+                                    "visibility": ""
                                 },
                                 {
                                     "date": "January 10, 2014",
@@ -148,7 +157,8 @@
                                     "ownername": "Terrance",
                                     "due": "ASAP",
                                     "priority": "medium-priority",
-                                    "description": "don't feed too much, it's getting fat"
+                                    "description": "don't feed too much, it's getting fat",
+                                    "visibility": ""
                                 }
                             ]
                     },
@@ -166,7 +176,8 @@
                                     "ownername": "Vanessa",
                                     "due": "ASAP",
                                     "priority": "low-priority",
-                                    "description": "neighbors have been complaining"
+                                    "description": "neighbors have been complaining",
+                                    "visibility": ""
                                 },
                                 {
                                     "date": "January 11, 2014",
@@ -176,7 +187,8 @@
                                     "ownername": "Vanessa",
                                     "due": "ASAP",
                                     "priority": "medium-priority",
-                                    "description": "replace toilet roll"
+                                    "description": "replace toilet roll",
+                                    "visibility": ""
                                 }
                             ]
                     }

@@ -528,6 +528,9 @@ button { border:0;}
     background-color: whitesmoke;
     color: transparent;
   }
+    .taskitems:active{
+    background-color: #eaeaea;
+    }
   .taskitems.high-priority {
     width: auto;
     padding-top: 0px;
@@ -564,5 +567,5 @@ button { border:0;}
     padding-left: 25px;
     font-family: Lato, sans-serif;
     color: black;
-    font-size: 11px;
+    font-size: 13px;
   }
