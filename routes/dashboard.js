@@ -169,11 +169,14 @@ exports.check = function(req, res) {
                       //  delete data.Group[i].Members[k].Tasks[j].taskname;
                         //console.log("After: " + data.Group[i].Members[k].Tasks[j].taskname);
                         //data.Group[i].Members[k].Tasks[j].visibility = "none";
-                        if (data.Group[i].Members[k].Tasks[j].line == ""){
-                        data.Group[i].Members[k].Tasks[j].line = "line-through";
+                        if (data.Group[i].Members[k].Tasks[j].check == ""){
+                            data.Group[i].Members[k].Tasks[j].line = "line-through";
+                            data.Group[i].Members[k].Tasks[j].check = "checked";
+                            console.log(data.Group[i].Members[k].Tasks[j].check);
                         }
                         else{
                         data.Group[i].Members[k].Tasks[j].line = "";
+                            data.Group[i].Members[k].Tasks[j].check = "";
                         }
                         res.render('dashboard', data.Group[req.session.groupID]);
                         

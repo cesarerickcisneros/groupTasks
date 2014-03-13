@@ -530,10 +530,18 @@ button { border:0;}
   }
 .check{
     border:1px solid black;
-    height: 17px;
-    width: 17px;
+    height: 16px;
+    width: 16px;
     margin: 15px 20px 0 20px; 
     float:left; 
+    padding:0;
+}
+.checked{
+    background-image:url(../images/checkmark.png);
+    height: 15px;
+    width: 15px;
+    margin:0 auto;
+    z-index: 3;
 }
   .taskitems.high-priority {
     width: auto;
