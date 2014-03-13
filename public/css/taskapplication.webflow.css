@@ -431,7 +431,7 @@ button { border:0;}
     border-bottom: 1px solid #76edbd;
     font-size: 20px;
   }
-  .medium-priority {
+  .task.medium-priority {
     padding-top: 8px;
     padding-bottom: 8px;
     border-right: 5px solid #ffa154;
@@ -547,7 +547,7 @@ button { border:0;}
   .tasktitles {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 5px;va
+    padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 20px;
     font-family: Lato, sans-serif;
@@ -555,11 +555,14 @@ button { border:0;}
     font-size: 26px;
     font-weight: 300;
   }
-.date {
-    margin-top: -12px;
-    padding-top: 0px;
-    padding-left: 40px;
+.details {
+    width: 90%;
+    border-top: 1px solid #d0d0d0;
+    margin: 0px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
     font-family: Lato, sans-serif;
     color: black;
-    font-size: 10px;
+    font-size: 11px;
   }

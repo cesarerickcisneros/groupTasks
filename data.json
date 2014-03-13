@@ -17,9 +17,9 @@
                                     "taskname": "Pay bills",
                                     "ownerid": 0,
                                     "ownername": "Cesar",
-                                    "due": "ASAP",
+                                    "due": "end of week",
                                     "priority": "high-priority",
-                                    "description": "trashbags under counter"
+                                    "description": "$20 for cable"
                                 },
                                 {
                                     "date": "January 16, 2014",
@@ -27,9 +27,9 @@
                                     "taskname": "Replace lightbulbs",
                                     "ownerid": 0,
                                     "ownername": "Cesar",
-                                    "due": "ASAP",
+                                    "due": "end of day",
                                     "priority": "high-priority",
-                                    "description": "trashbags under counter"
+                                    "description": "lighbulbs under sink"
                                 }
                             ]
                     },
@@ -45,9 +45,9 @@
                                     "taskname": "Clean the garage",
                                     "ownerid": 1,
                                     "ownername": "Jaysen",
-                                    "due": "ASAP",
-                                    "priority": "medium-priority",
-                                    "description": "trashbags under counter"
+                                    "due": "end of week",
+                                    "priority": "low-priority",
+                                    "description": "organize things for yard sale"
                                 },
                                 {
                                     "date": "January 23, 2014",
@@ -56,8 +56,8 @@
                                     "ownerid": 1,
                                     "ownername": "Jaysen",
                                     "due": "ASAP",
-                                    "priority": "low-priority",
-                                    "description": "trashbags under counter"
+                                    "priority": "high-priority",
+                                    "description": "only one pellet per meal"
                                 }
                             ]
                     },
@@ -74,8 +74,8 @@
                                     "ownerid": 2,
                                     "ownername": "Sarah",
                                     "due": "ASAP",
-                                    "priority": "low-priority",
-                                    "description": "trashbags under counter"
+                                    "priority": "high-priority",
+                                    "description": "i'm bringing a girl over! plz help!"
                                 },
                                 {
                                     "date": "January 30, 2014",
@@ -83,7 +83,7 @@
                                     "taskname": "Take out the trash",
                                     "ownerid": 2,
                                     "ownername": "Sarah",
-                                    "due": "ASAP",
+                                    "due": "end of day",
                                     "priority": "medium-priority",
                                     "description": "trashbags under counter"
                                 }
@@ -107,9 +107,9 @@
                                     "taskname": "Mow the lawn",
                                     "ownerid": 0,
                                     "ownername": "Steven",
-                                    "due": "ASAP",
-                                    "priority": "high-priority",
-                                    "description": "trashbags under counter"
+                                    "due": "end of week",
+                                    "priority": "low-priority",
+                                    "description": "neighbors have been complaining"
                                 },
                                 {
                                     "date": "January 26, 2014",
@@ -119,7 +119,7 @@
                                     "ownername": "Steven",
                                     "due": "ASAP",
                                     "priority": "high-priority",
-                                    "description": "trashbags under counter"
+                                    "description": "kinda important"
                                 }
                             ]
                     },
@@ -137,7 +137,7 @@
                                     "ownername": "Terrance",
                                     "due": "ASAP",
                                     "priority": "high-priority",
-                                    "description": "trashbags under counter"
+                                    "description": "don't forget to change the sponge"
                                 },
                                 {
                                     "date": "January 10, 2014",
@@ -147,7 +147,7 @@
                                     "ownername": "Terrance",
                                     "due": "ASAP",
                                     "priority": "medium-priority",
-                                    "description": "trashbags under counter"
+                                    "description": "don't feed too much, it's getting fat"
                                 }
                             ]
                     },
@@ -165,7 +165,7 @@
                                     "ownername": "Vanessa",
                                     "due": "ASAP",
                                     "priority": "low-priority",
-                                    "description": "trashbags under counter"
+                                    "description": "neighbors have been complaining"
                                 },
                                 {
                                     "date": "January 11, 2014",
@@ -175,7 +175,7 @@
                                     "ownername": "Vanessa",
                                     "due": "ASAP",
                                     "priority": "medium-priority",
-                                    "description": "trashbags under counter"
+                                    "description": "replace toilet roll"
                                 }
                             ]
                     }

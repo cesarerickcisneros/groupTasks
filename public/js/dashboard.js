@@ -21,6 +21,12 @@ function initializePage() {
             $(input).css('textDecoration', 'none');
         }
     });
+    
+    $(document).ready(function(){
+  $(".tasktitles").click(function(){
+    $(".details").toggle();
+  });
+});
 
     $('.tasktitles').click(addTaskDetails);
     $('.invite').click(analytics);
