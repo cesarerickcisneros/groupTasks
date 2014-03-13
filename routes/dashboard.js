@@ -57,6 +57,7 @@ exports.addTask = function(req, res) {
 	var newTask = req.query.taskname;
 	var userinfo = req.query.id;
     var due = req.query.due;
+    var description = req.query.description;
 	var newpriority = req.query.priority;
     var found = false;
     var name = "";
@@ -80,6 +81,7 @@ exports.addTask = function(req, res) {
                     "taskid": data.Group[i].Members[j].Tasks.length,
                     "taskname": newTask,
                     "due": due,
+                    "description": description,
                     "priority": newpriority,
                     "ownerid": usernum
                 }
