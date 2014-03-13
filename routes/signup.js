@@ -65,9 +65,14 @@ res.render('dashboard', data.Group[req.session.groupID]);
             else if(!uadded){ //New Group name created
                 console.log("Ready to push newUser to a new Group");
                 gadded = true;
+                
                 data.Group.push(newGroup);
+                console.log(data.Group);
+                req.session.userID = 0;
+                req.session.groupID = data.Group.length - 1;
+                console.log(req.session.groupID);
                 if(gadded){
-                   // console.log("Added new group with following details: " + data.Group[2].groupname);
+                   console.log("Added new group with following details: " + data.Group[2].groupname);
                     res.render('dashboard', data.Group[req.session.groupID]);
                 }
             }

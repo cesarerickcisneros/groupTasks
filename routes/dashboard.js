@@ -4,9 +4,10 @@ var fs = require('fs');
 
 exports.view = function(req, res) { 
 
-	if(!req.session.userID || req.session.userID == -1){
+	if(req.session.userID == null || req.session.userID == -1){
 		res.render('login.handlebars');
 	}
+    
       //  var rmv = false;
       //  data.Group[req.session.groupID] = false;
         res.render('dashboard', data.Group[req.session.groupID]);
@@ -62,14 +63,14 @@ exports.addTask = function(req, res) {
     var found = false;
     var name = "";
     var usernum = userinfo[0];
-    console.log("adding task");
+   //console.log("adding task");
     
     for(var k = 2; k < userinfo.length; k++){
         //console.log(userinfo[k]);
         name = name + userinfo[k];
        // console.log(name);
     }
-    console.log("Chore = " + newTask + " Roomie = " + name + " num = " + usernum);
+   // console.log("Chore = " + newTask + " Roomie = " + name + " num = " + usernum);
     
     for(var i = 0; i < data.Group.length; i++){
         for(var j = 0; j < data.Group[i].Members.length; j++){
@@ -127,7 +128,7 @@ exports.removeTask = function(req, res) {
                    data.Group[i].Members[k].Tasks[j].ownerid == ownernum ){
                         found = true;
                         hide = true;
-                       console.log("Removing task");
+                      // console.log("Removing task");
         
                         delete data.Group[i].Members[k].Tasks[j].taskname;
                         //console.log("After: " + data.Group[i].Members[k].Tasks[j].taskname);
