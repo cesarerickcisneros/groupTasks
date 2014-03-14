@@ -40,26 +40,26 @@
       <form class="w-clearfix addform" name="email-form" role="form" method="get" action="add">
         <h3>Add Task</h3>
         <p class="adddescription">You can add task and assign them here. Set up the date and its level of priority and you are all set!</p>
-        <input class="w-input form_inputs" type="text" placeholder="enter task" name="taskname" data-name="taskname" required="required"></input>
-        <input class="w-input form_inputs" type="text" placeholder="enter description" name="description" data-name="description" required="required"></input>
+        <input class="w-input form_inputs" type="text" placeholder="Enter Task" name="taskname" data-name="taskname" required="required"></input>
+        <input class="w-input form_inputs" type="text" placeholder="Enter Description" name="description" data-name="description" required="required"></input>
         <select class="w-select form_inputs" name="id" data-name="id" required="required">
-        <option value="">assign task...</option>
+        <option value="">Assign Task...</option>
           {{#each Members}}
         <option name={{name}} value="{{id}} {{name}}">{{name}}</option>
           {{/each}}
       </select>
         
         <select class="w-select form_inputs" name="due" data-name="due" required="required">
-          <option value="">due by...</option>
-          <option value="asap">asap</option>
-          <option value="end of day">end of day</option>
-          <option value="end of week">end of week</option>
+          <option value="">Due By...</option>
+          <option value="asap">Asap</option>
+          <option value="end of day">End of Day</option>
+          <option value="end of week">End of Week</option>
         </select>
         <select class="w-select form_inputs" name="priority" data-name="priority" required="required">
-          <option value="">priority...</option>
-          <option value="low-priority">low</option>
-          <option value="medium-priority">medium</option>
-          <option value="high-priority">high</option>
+          <option value="">Priority...</option>
+          <option value="low-priority">Low</option>
+          <option value="medium-priority">Medium</option>
+          <option value="high-priority">High</option>
         </select>
         <button class="button signupbutton" type="submit" value="Add">Add Task</button>
       </form>
